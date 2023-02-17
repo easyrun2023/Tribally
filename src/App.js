@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import Layout from "./templates/Layout";
+import Leaderboard from "./templates/Leaderboard";
+import { sagaActions } from "./redux/sagas/actions";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch({ type: sagaActions.FETCH_DASHBOARD_DATA });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Leaderboard />} />
+      </Routes>
+    </Layout>
   );
-}
+};
 
 export default App;
