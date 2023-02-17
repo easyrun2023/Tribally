@@ -1,12 +1,14 @@
 import styled from "styled-components";
-import { colors } from "../../../styles/colors/palletes";
+import { colors } from "../../styles/colors/palletes";
 
-export const Leaderboard = styled.div`
-  flex: 1;
+
+export const LeaderboardVectors = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: ${colors.gray600};
 `;
 
 export const VectorContainer = styled.div`

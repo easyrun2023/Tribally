@@ -1,17 +1,17 @@
 import React from "react";
 import Loading from "../../components/Loading";
-import useDashboard from "../../hooks/useDashboard";
 import * as S from "./styles";
-import LayoutImages from "../../components";
+import LayoutImages from "../../components/LayoutImages";
+import useLeaderboard from "../../hooks/useLeaderboard";
 
 const Layout = ({ children }) => {
-  const { isLoading } = useDashboard();
+  const { isLoading } = useLeaderboard();
 
   if (isLoading) return <Loading />;
 
   return (
     <S.Layout>
-      {children}
+      <S.LayoutChildren>{children}</S.LayoutChildren>
       <LayoutImages />
     </S.Layout>
   );

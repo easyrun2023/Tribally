@@ -9,3 +9,9 @@ export const Layout = styled.div`
   background: ${colors.gray600};
 `;
 
+export const LayoutChildren = styled.div`
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`;

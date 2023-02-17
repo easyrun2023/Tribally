@@ -2,11 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = { data: [], isLoading: true };
 
-const dashboard = createSlice({
-  name: "dashboard",
+const leaderboard = createSlice({
+  name: "leaderboard",
   initialState,
   reducers: {
-    fetchDashboard(state, action) {
+    fetchLeaderboard(state, action) {
       state.data = action.payload;
     },
     setLoading(state, action) {
@@ -15,5 +15,5 @@ const dashboard = createSlice({
   },
 });
 
-export const { fetchDashboard, setLoading } = dashboard.actions;
-export default dashboard.reducer;
+export const { fetchLeaderboard, setLoading } = leaderboard.actions;
+export default leaderboard.reducer;

@@ -1,13 +1,13 @@
-import React, { Fragment } from "react";
-import VectorIMG from "../../../assets/images/vector.png";
-import WoodIMG from "../../../assets/images/wood.png";
-import StarIMG from "../../../assets/images/star.png";
+import React from "react";
+import VectorIMG from "../../assets/images/vector.png";
+import WoodIMG from "../../assets/images/wood.png";
+import StarIMG from "../../assets/images/star.png";
 import * as S from "./styles";
-import Image from "../../../components/Image";
+import Image from "../Image";
 
 const LeaderboardVectors = () => {
   return (
-    <Fragment>
+    <S.LeaderboardVectors>
       <S.WoodContainer image={WoodIMG}>
         <S.LeaderboardText>Leaderboard</S.LeaderboardText>
         <S.Season>
@@ -17,7 +17,7 @@ const LeaderboardVectors = () => {
         </S.Season>
       </S.WoodContainer>
       <S.VectorContainer image={VectorIMG} />
-    </Fragment>
+    </S.LeaderboardVectors>
   );
 };
 

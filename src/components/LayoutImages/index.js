@@ -12,6 +12,7 @@ const LayoutImages = () => {
       style: { opacity: 0.3 },
       src: TrophyIMG,
       width: 900,
+      zIndex: 1,
     },
   ];
 

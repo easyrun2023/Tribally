@@ -1,7 +1,7 @@
-import dashboardReducer from "./dashboard";
+import leaderboardReducer from "./leaderboard";
 
 const reducers = {
-  dashboard: dashboardReducer,
+  leaderboard: leaderboardReducer,
 };
 
 export default reducers;

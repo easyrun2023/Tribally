@@ -1,7 +1,7 @@
 import React from "react";
-import LeaderboardTable from "./LeaderboardTable";
-import LeaderboardVectors from "./LeaderboardVectors";
-import * as S from "./LeaderboardVectors/styles";
+import LeaderboardTable from "../../components/LeaderboardTable";
+import LeaderboardVectors from "../../components/LeaderboardVectors";
+import * as S from "./styles";
 
 const Leaderboard = () => {
   return (

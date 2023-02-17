@@ -1,12 +1,12 @@
 import { call, put, takeLatest } from "redux-saga/effects";
-import { httpsGetDashboardLeaderboard } from "../../api/dashboard";
-import { fetchDashboard, setLoading } from "../reducers/dashboard";
+import { httpsGetLeaderboard } from "../../api/leaderboard";
+import { fetchLeaderboard, setLoading } from "../reducers/leaderboard";
 import { sagaActions } from "./actions";
 
-function* fetchDashboardData(action) {
+function* fetchLeaderboardData(action) {
   try {
-    const { data } = yield call(httpsGetDashboardLeaderboard);
-    yield put(fetchDashboard(data));
+    const { data } = yield call(httpsGetLeaderboard);
+    yield put(fetchLeaderboard(data));
   } catch (e) {
     yield put({ type: "USER_FETCH_FAILED", message: e.message });
   } finally {
@@ -15,5 +15,5 @@ function* fetchDashboardData(action) {
 }
 
 export default function* mySaga() {
-  yield takeLatest(sagaActions.FETCH_DASHBOARD_DATA, fetchDashboardData);
+  yield takeLatest(sagaActions.FETCH_LEADERBOARD_DATA, fetchLeaderboardData);
 }
