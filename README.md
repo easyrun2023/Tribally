@@ -1,4 +1,4 @@
-# Trribally Technical Task
+# Tribally Technical Task
 
 ![alt text](https://pbs.twimg.com/profile_images/1514928357720403971/F8WzogJ__200x200.jpg)
 
