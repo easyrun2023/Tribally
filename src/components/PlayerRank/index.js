@@ -5,8 +5,11 @@ import Image from "../../components/Image";
 import ImageRank from "./ImageRank";
 
 const PlayerRank = ({ topRank, rank, name, vstar, id }) => {
+  const isPlayerWithinTopThree =
+    topRank === 1 || topRank === 2 || topRank === 3;
+
   return (
-    <S.PlayerRank to={`/player/${id}`}>
+    <S.PlayerRank to={`/player/${id}`} isActive={isPlayerWithinTopThree}>
       <S.PlayerRankNumberName>
         <S.PlayerRankNumber>{topRank}</S.PlayerRankNumber>
         <S.PlayerRankName>{name}</S.PlayerRankName>

@@ -6,6 +6,8 @@ import { sagaActions } from "./redux/sagas/actions";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import NotFound from "./templates/NotFound";
+import Player from "./templates/Player";
+import ScrollToTop from "./components/ScrollTop";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -18,6 +20,7 @@ const App = () => {
     <Layout>
       <Routes>
         <Route path="/" element={<Leaderboard />} />
+        <Route path="/player/:clientId" element={<Player />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>

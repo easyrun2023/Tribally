@@ -21,7 +21,7 @@ export const PlayerRank = styled(Link)`
       : colors.gray700};
   border-radius: 9px;
   border: ${({ isActive }) =>
-    isActive ? "4px solid transparent" : "solid rgba(147, 110, 89, 0.24)"};
+    isActive ? "4px solid transparent" : "2px solid rgba(147, 110, 89, 0.24)"};
   padding: 6px;
 
   &:first-child {

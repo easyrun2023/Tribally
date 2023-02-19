@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "./Image";
-import LayoutImage from "./LayoutImage";
-import TrophyIMG from "../assets/images/trophy.png";
+import Image from "../Image";
+import LayoutImage from "../LayoutImage";
+import TrophyIMG from "../../assets/images/trophy.png";
 
 const LayoutImages = () => {
   const images = [

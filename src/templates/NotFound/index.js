@@ -1,10 +1,8 @@
-import React from 'react'
+import React from "react";
 import * as S from "./styles";
 
-const NotFound = () => {
-  return (
-    <S.NotFound>Page Not Found</S.NotFound>
-  )
-}
+const NotFound = ({ title }) => {
+  return <S.NotFound>{title || "Page Not Found"}</S.NotFound>;
+};
 
-export default NotFound
+export default NotFound;
