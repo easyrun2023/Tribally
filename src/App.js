@@ -7,13 +7,14 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import NotFound from "./templates/NotFound";
 import Player from "./templates/Player";
-import ScrollToTop from "./components/ScrollTop";
 
 const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch({ type: sagaActions.FETCH_LEADERBOARD_DATA });
+
+    /* eslint-disable */
   }, []);
 
   return (

@@ -6,7 +6,7 @@ import Image from "../../components/Image";
 import PlayerBattlesTable from "../../components/PlayerBattlesTable";
 import NotFound from "../../templates/NotFound";
 import useLeaderboard from "../../hooks/useLeaderboard";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const Player = () => {
   const { leaderboard } = useLeaderboard();

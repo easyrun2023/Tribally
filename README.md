@@ -9,3 +9,7 @@
 3. Go to the project in vscode or whatever code editor you use
 4. Run `npm install` and `npm start`
 5. Go to localhost:3000 and enjoy 🙌😁
+
+# Run tests
+
+Simply `npm test` 🙌
